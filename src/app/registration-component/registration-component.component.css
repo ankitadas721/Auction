@@ -1,0 +1,52 @@
+*{box-sizing: border-box}
+.container{
+    
+    padding: 90px;
+    width: 666px;
+    margin: 34px auto;
+    border: 3px!important; 
+}
+.box{
+    border: 3px!important;
+    height: 500px;
+    width: 500px;
+    align-content: center;
+     justify-content: center;
+    align-items: center;
+    border-radius: 4px!important;
+
+}
+input {
+    width: 200%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  button:hover {
+    opacity:1;
+  }
+  .signupbtn {
+    float: center;
+    width: 30%;
+  }
+  button {
+    background-color: #e78a34;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 300px) {
+    .signupbtn {
+     width: 100%;
+   }
+}
