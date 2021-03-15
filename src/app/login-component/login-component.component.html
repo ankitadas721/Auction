@@ -1,7 +1,7 @@
 <form>
     <div class="container">
         <div class="box">
-            <h1 class="head">Sign Up</h1>
+            <h1 id="login" class="head">Sign Up</h1>
 
             <hr>
 
@@ -12,21 +12,22 @@
             <input type="password" placeholder="Enter Password" name="psw" required>
 
 
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
 
             <label>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
             </label>
 
             <div class="row">
-                <div class="col-sm-6">
-                    <button type="submit" class="signupbtn">Sign Up</button>
+                <div class="col-sm-8">
+                    <button type="submit" class="signupbtn" onclick="matchPassword()">Sign Up</button>
                 </div>
-                <div class="col-sm-6" style="padding: 14px;padding-left: 300px;">
-                    <a href="#">Don't have an account?</a>
+                <div class="col-sm-4">
+                    <a href="/register">Don't have an account?</a>
                 </div>
             </div>
 
         </div>
     </div>
+
 </form>

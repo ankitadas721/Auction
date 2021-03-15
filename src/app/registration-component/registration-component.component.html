@@ -1,37 +1,57 @@
 <form>
     <div class="container">
         <div class="box">
-            <h2>REGISTER</h2>
-            <hr>
+
+
+            <h2 id="register">REGISTER</h2>
+            <hr style="width:50%;text-align:left;margin-left:0">
+
+
             <p>Please fill in this form to create an account.</p>
             <table>
                 <tr>
                     <td>Name :</td>
-                    <td><input type="text" placeholder="Enter name" required></td>
+                    <td><input type="text" placeholder="Enter name" name="userName" [(ngModel)]="userName" required>
+                    </td>
                 </tr>
                 <tr>
                     <td>Email:</td>
-                    <td><input type="text" placeholder="Enter Email" required></td>
+                    <td><input type="text" placeholder="Enter Email" name="userEmail" [(ngModel)]="userEmail" required>
+                    </td>
                 </tr>
                 <tr>
                     <td>Address:</td>
-                    <td><input type="text" placeholder="Enter Address" required></td>
+                    <td><input type="text" placeholder="Enter Address" name="userAddress" [(ngModel)]="userAddress"
+                            required></td>
                 </tr>
                 <tr>
                     <td>Phone no. :</td>
-                    <td><input type="number" placeholder="Enter phone no." required></td>
+                    <td><input type="number" placeholder="Enter phone no." name="userPhone" [(ngModel)]="userPhone"
+                            required></td>
                 </tr>
                 <tr>
                     <td>Password :</td>
-                    <td><input type="password" placeholder="Enter password" required></td>
+                    <td><input type="password" placeholder="Enter password" name="userPassword"
+                            [(ngModel)]="userPassword" required></td>
                 </tr>
                 <tr>
                     <td>Confirm Password :</td>
-                    <td><input type="password" placeholder="Confirm password" required></td>
+                    <td><input type="password" placeholder="Enter password" name="userPasswordConfirm"
+                            [(ngModel)]="userPasswordConfirm" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Register As : </td>
+                    <td style="padding-left: 14px;"><select name="registerAs" [(ngModel)]="userRegisterAs">
+                            <option value="Buyer">Buyer</option>
+                            <option value="Seller">Seller</option>
+
+                        </select></td>
+
                 </tr>
             </table>
 
-            <button type="submit" class="signupbtn">Sign In</button>
+            <button (click)="Validation()" class="signupbtn">Sign In</button>
 
         </div>
     </div>

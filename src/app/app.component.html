@@ -1,11 +1,74 @@
-<h1>Angular Router App</h1>
-<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav>
-  <ul>
-    <li><a routerLink="/login" routerLinkActive="active">First Component</a></li>
-    <li><a routerLink="/register" routerLinkActive="active">Second Component</a></li>
-  </ul>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="../assets/AucImg/A.logo.jpg" style="height: 37px;
+        width: 45px;
+        padding-bottom: 4px;"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a routerLink="/register" (click)="scroll()" routerLinkActive="active" style="padding-left:900px ;">SIGN
+          IN</a></li>
+      <li><a routerLink="/login" (click)="scroll()" routerLinkActive="active">SIGN UP</a></li>
+
+    </ul>
+  </div>
 </nav>
+<div class="container">
+  <img src="../assets/AucImg/Quote.jpg" style="height: 400px; width: 50% ">
+</div>
+<div class="head">
+  <h3 style="text-align:center;"><strong>BID, WIN AND CLOSE WITH CONFIDENCE</strong> </h3>
+</div>
+<div>
+  <h2>Latest Products</h2>
+</div>
+<hr>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="../assets/AucImg/AntiqueItem.jpg" alt="Antique">
+      <div class="carousel-caption">
+        <h3 style="color:black;">Antique</h3>
 
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../assets/AucImg/Canvas.jpg" alt="Canvas">
+      <div class="carousel-caption">
+        <h3 style="color:black;">Canvas</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="../assets/AucImg/car.jpg" alt="Car">
+      <div class="carousel-caption">
+        <h3 style="color:black;">Cars</h3>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div>
+  <footer>
+    <p>CopyRight@JavaBuddies &copy;</p>
+  </footer>
+</div>
 <router-outlet></router-outlet>

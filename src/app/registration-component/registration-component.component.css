@@ -1,7 +1,7 @@
 *{box-sizing: border-box}
 .container{
     
-    padding: 90px;
+    padding: 70px;
     width: 666px;
     margin: 34px auto;
     border: 3px!important; 
@@ -49,4 +49,5 @@ input {
     .signupbtn {
      width: 100%;
    }
+   
 }
